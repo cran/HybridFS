@@ -1,0 +1,14 @@
+4e98d17b511d0d5837d66b610afc0f4a *DESCRIPTION
+6f9031c1aa9ccee5bdc436a05338e116 *LICENSE
+2065a51e0ab16e51c875a283b1b2154a *NAMESPACE
+ae9273a8c9baab6f0efd202e495dbfdc *R/FinalBinnedData.R
+09d73a428cf1e8bf724c1614311b17a3 *R/HybridFS.R
+50e293c448d3658d5bab190d3d30fbfc *R/imp.features.R
+0cdbbbc5d0080ae4b88e9f389a4208e3 *R/model.perf.R
+b76678fc69197d7aa20b2c3ac91dcefc *R/validation-data.R
+354b17fbaa0a2b9e68876a34d67617e1 *data/validation.rda
+65ee6621bbd143b8f8d98f400ee98a9f *man/FinalBinnedData.Rd
+cc23bc98b5cd9e09381b33da20d75958 *man/HybridFS.Rd
+7bbc94259ef00f63a66a1c39a9fab3b0 *man/imp.features.Rd
+133848cdcb2451c32150f7138efa5251 *man/model.perf.Rd
+074a3903251f513467e8709933bfb949 *man/validation.Rd
