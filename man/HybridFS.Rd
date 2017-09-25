@@ -19,13 +19,15 @@ An object of class FS, which is a list with the following components:
 \item{model.perf}{Performance metrics of the optimal model such as F1 Score, Accuracy, Precision and Recall are returned}
 }
 \description{
-HybridFS is a combination of Filter and Wrapper methods which uses a set of statistical tests for feature selection. Primary level feature reduction involves filtering based on statistical test such as Chi-Square test of Independence, Information value(IV) and Entropy-related methods. Features filtered at this level are further fed into a classification algorithm and final features of the optimal model is returned along with the feature importance.
+HybridFS is a combination of filter and wrapper methods which uses a set of statistical tests for feature selection. Primary level feature reduction involves filtering based on statistical test such as Chi-Square test of Independence, Information value(IV) and Entropy-related methods. Features filtered at this level are further fed into a classification algorithm and final features of the optimal model is returned along with the feature importance.
 }
 \details{
-\emph{Binning of Continuous Predictors:}\cr
-Supervised Binning of continuous predictors reduces computational time, improves model performance and predictive power. Binning is implemented based on similar weight of evidence (WOE) values and information value (IV). Transformed dataset with binned copy of continuous variables is then fed into the Hybrid Filter-Wrapper algorithm. Continuous features selected are returned as binned variables (e.g. average_volume is returned as average_volume.binned). To retrieve the transformed dataset, use FinalBinnedData() function.\cr
+\emph{Binning of Continuous Predictors}\cr
+Supervised Binning of continuous predictors reduces computational time, improves model performance and predictive power. Binning is implemented based on similar weight of evidence (WOE) values and information value (IV). Transformed dataset with binned copy of continuous variables is then fed into the Hybrid filter-Wrapper algorithm. Continuous features selected are returned as binned variables (e.g. average_volume is returned as average_volume.binned). To retrieve the transformed dataset, use FinalBinnedData() function.\cr
+
 \emph{Level1 Feature Reduction - Filter Method}\cr
 Chi-Square test of Independence, Information value(IV) and Entropy-related methods such as Information Gain, Gain Ratio and Symmetrical Uncertainty are used to generate variable importance scores. Top n features are dynamically selected and different subsets are formed based on relative ranking from each of the filter methods.\cr
+
 \emph{Level2 Feature Reduction - Wrapper Method}\cr
 Different subsets of variables from the first level are trained using a classification algorithm. Optimum probability cut-off for the target class is determined by the K-S Statistic. Combination of Area Under the Curve(AUC) and F-score (F1 score) are used as the benchmark metrics to measure the model performance. Best set of features with variable importance and rank from the optimal model is returned. Out-of-Sample Validation results are also displayed to understand the stability of the optimal model selected.
 }
